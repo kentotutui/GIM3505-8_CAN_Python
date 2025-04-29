@@ -6,7 +6,7 @@ import signal
 import sys
 
 # === 設定 ===
-NODE_ID = 0x02  # GIM MotorのCAN ID (デフォルト2?)
+NODE_ID = 0x002  # GIM MotorのCAN ID (デフォルト2?)
 
 CAN_ID = NODE_ID  # GIMはこのまま使う
 
