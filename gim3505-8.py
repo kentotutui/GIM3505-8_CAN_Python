@@ -32,15 +32,6 @@ send_can_cmd(CMD_MOTOR_ON)
 
 time.sleep(0.1)
 
-"""
-# 速度設定 (120RPMで1秒間) をやりたいならここを使う
-speed_bytes = float_to_bytes(120.0)
-duration_bytes = duration_to_bytes(1000)  # 1000ms
-send_can_cmd(0x94, speed_bytes + duration_bytes)
-
-time.sleep(2)
-"""
-
 # === 位置制御コマンド ===
 pos_deg = 0
 pos_rad = pos_deg / (180 / math.pi)
